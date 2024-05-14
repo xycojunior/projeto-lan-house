@@ -37,6 +37,7 @@ def menu():
     print("4 - Computador4")
     print("5 - Computador5")
     print("6 - Sair e fazer check-out\n")
+    print("7 - encerrar aplicação")
     opcao = int(input("Escolha uma opção: "))
     return opcao
 
@@ -64,7 +65,7 @@ while True:
         if ocupado1 == "Não":
             dadosUser = input("Digite seu nome: ")
             usuario1 = dadosUser
-            print("Bem-vindo",usuario1,"você fez login no Computador 1\n")
+            print("Bem-vindo",usuario1,"você fez login no Computador 1")
             ocupado1 = "Sim"
         else:
             print("Computador ocupado por",usuario1,"escolha outro!\n") 
@@ -73,7 +74,7 @@ while True:
         if ocupado2 == "Não":
             dadosUser = input("Digite seu nome: ")
             usuario2 = dadosUser
-            print("Bem-vindo",usuario2,"você fez login no Computador 2\n")
+            print("Bem-vindo",usuario2,"você fez login no Computador 2")
             ocupado2 = "Sim"
         else:
             print("Computador ocupado por",usuario2,"escolha outro!\n") 
@@ -82,7 +83,7 @@ while True:
         if ocupado3 == "Não":
             dadosUser = input("Digite seu nome: ")
             usuario3 = dadosUser
-            print("Bem-vindo",usuario3,"você fez login no Computador 3\n")
+            print("Bem-vindo",usuario3,"você fez login no Computador 3")
             ocupado3 = "Sim"
         else:
             print("Computador ocupado por",usuario3,"escolha outro!\n") 
@@ -91,7 +92,7 @@ while True:
         if ocupado4 == "Não":
             dadosUser = input("Digite seu nome: ")
             usuario4 = dadosUser
-            print("Bem-vindo",usuario4,"você fez login no Computador 4\n")
+            print("Bem-vindo",usuario4,"você fez login no Computador 4")
             ocupado4 = "Sim"
         else:
             print("Computador ocupado por",usuario4,"escolha outro!\n") 
@@ -100,7 +101,7 @@ while True:
         if ocupado5 == "Não":
             dadosUser = input("Digite seu nome: ")
             usuario5 = dadosUser
-            print("Bem-vindo",usuario5,"você fez login no Computador 5\n")
+            print("Bem-vindo",usuario5,"você fez login no Computador 5")
             ocupado5 = "Sim"
         else:
             print("Computador ocupado por",usuario5,"escolha outro!\n") 
@@ -115,7 +116,7 @@ while True:
                 if usuario1 == dadosUser:
                     horas = int(input("Quantas horas você passou? "))
                     ocupado1 = "Não"
-                    print("Computador 1 irá ser fechado e fazer logout!")
+                    print("\nComputador 1 irá ser fechado e fazer logout!")
                     print(usuario1, "você passou",horas, "hora(s) logado, seu valor a ser pago é: R${}.00".format(valorHora * horas))
                     print("Obrigado e volte sempre!") 
             else:
@@ -126,7 +127,7 @@ while True:
                 if usuario2 == dadosUser:
                     horas = int(input("Quantas horas você passou? "))
                     ocupado2 = "Não"
-                    print("Computador 2 irá ser fechado e fazer logout!")
+                    print("\nComputador 2 irá ser fechado e fazer logout!")
                     print(usuario2, "você passou",horas, "hora(s) logado, seu valor a ser pago é: R${}.00".format(valorHora * horas))
                     print("Obrigado e volte sempre!")
             else:
@@ -137,7 +138,7 @@ while True:
                 if usuario3 == dadosUser:
                     horas = int(input("Quantas horas você passou? "))
                     ocupado3 = "Não"
-                    print("Computador 3 irá ser fechado e fazer logout!")
+                    print("\nComputador 3 irá ser fechado e fazer logout!")
                     print(usuario3, "você passou",horas, "hora(s) logado, seu valor a ser pago é: R${}.00".format(valorHora * horas))
                     print("Obrigado e volte sempre!")
             else:
@@ -148,7 +149,7 @@ while True:
                 if usuario4 == dadosUser:
                     horas = int(input("Quantas horas você passou? "))
                     ocupado4 = "Não"
-                    print("Computador 4 irá ser fechado e fazer logout!")
+                    print("\nComputador 4 irá ser fechado e fazer logout!")
                     print(usuario4, "você passou",horas, "hora(s) logado, seu valor a ser pago é: R${}.00".format(valorHora * horas))
                     print("Obrigado e volte sempre!")
             else:
@@ -159,12 +160,15 @@ while True:
                 if usuario5 == dadosUser:
                     horas = int(input("Quantas horas você passou? "))
                     ocupado5 = "Não"
-                    print("Computador 5 irá ser fechado e fazer logout!")
+                    print("\nComputador 5 irá ser fechado e fazer logout!")
                     print(usuario5, "você passou",horas, "hora(s) logado, seu valor a ser pago é: R${}.00".format(valorHora * horas))
                     print("Obrigado e volte sempre!")
             else:
                 print("Computador 5 não está ocupado.\n")
-
+    elif opcao == 7:
+        print("Você encerrou a aplicação!")
+        break
+        
 #Verificação para saber se o usuario informou um valor não definido:
-    elif opcao >= 7: 
-        print("opção inválida, digite um valor de 0 a 6")
+    elif opcao >= 8: 
+        print("opção inválida, digite um valor de 0 a 7")
