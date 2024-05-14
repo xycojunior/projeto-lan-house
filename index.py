@@ -36,8 +36,8 @@ def menu():
     print("3 - Computador3")
     print("4 - Computador4")
     print("5 - Computador5")
-    print("6 - Sair e fazer check-out\n")
-    print("7 - encerrar aplicação")
+    print("6 - Sair e fazer check-out")
+    print("7 - encerrar aplicação\n")
     opcao = int(input("Escolha uma opção: "))
     return opcao
 
